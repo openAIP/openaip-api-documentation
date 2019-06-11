@@ -10,6 +10,8 @@ info:
 
         The API is case-sensitive and by default, every parameter value is lowercase or camelCase!
         Refer to the parameters definition section in the document below.
+
+        To read the documentation of the production API, please change the YAML definition to "api.yaml" in the box above.
     version: '2.0'
     title: openAIP API - Staging
     contact:
