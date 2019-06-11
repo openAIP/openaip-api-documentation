@@ -30,7 +30,7 @@ tags:
         description: Endpoints to interact with navaids.
 servers:
     -   url: "https://api.openaip.net/api/v2"
-        description: Staging URL for testing.
+        description: Main production API endpoint.
 components:
     parameters:
         id:
