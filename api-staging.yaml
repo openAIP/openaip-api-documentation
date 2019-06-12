@@ -18,7 +18,7 @@ info:
         email: webmaster@openaip.net
     license:
         name: properietary
-        url: 'https://staging.openaip.net.net/license'
+        url: 'https://staging.openaip.net/license'
 tags:
     -   name: Status
         description: Endpoints that provide backend API status information.
@@ -31,7 +31,7 @@ tags:
     -   name: Navaids
         description: Endpoints to interact with navaids.
 servers:
-    -   url: "https://staging.api.openaip.net.net/api/v2"
+    -   url: "https://staging.api.openaip.net/api/v2"
         description: Staging API endpoint for testing.
 components:
     parameters:
@@ -154,7 +154,7 @@ paths:
             tags:
                 - Airports
             summary: Search airports
-            description: Search database for airports based on filter criteria. Complete schema available at [](https://staging.api.openaip.net.net/api/v2/schema/airport/featureCollection.json).
+            description: Search database for airports based on filter criteria. Complete schema available at [](https://staging.api.openaip.net/api/v2/schema/airport/featureCollection.json).
             parameters:
                 # apiKey param
                 -   $ref: '#/components/parameters/apiKey'
@@ -272,7 +272,7 @@ paths:
                     content:
                         application/vnd.geo+json:
                             schema:
-                                $ref: 'https://staging.api.openaip.net.net/api/v2/schema/airport/featureCollection.json'
+                                $ref: 'https://staging.api.openaip.net/api/v2/schema/airport/featureCollection.json'
                 400:
                     $ref: '#/components/responses/400'
                 401:
@@ -287,7 +287,7 @@ paths:
             tags:
                 - Airspaces
             summary: Search airspaces
-            description: Search database for airspaces based on filter criteria. Complete schema available at https://staging.api.openaip.net.net/api/v2/schema/airspace/featureCollection.json.
+            description: Search database for airspaces based on filter criteria. Complete schema available at https://staging.api.openaip.net/api/v2/schema/airspace/featureCollection.json.
             parameters:
                 # apiKey param
                 -   $ref: '#/components/parameters/apiKey'
@@ -396,7 +396,7 @@ paths:
                     content:
                         application/vnd.geo+json:
                             schema:
-                                $ref: 'https://staging.api.openaip.net.net/api/v2/schema/airspace/featureCollection.json'
+                                $ref: 'https://staging.api.openaip.net/api/v2/schema/airspace/featureCollection.json'
                 400:
                     $ref: '#/components/responses/400'
                 401:
@@ -411,7 +411,7 @@ paths:
             tags:
                 - Hotspots
             summary: Search hotspots
-            description: Search database for hotspots based on filter criteria. Complete schema available at https://staging.api.openaip.net.net/api/v2/schema/hotspot/featureCollection.json.
+            description: Search database for hotspots based on filter criteria. Complete schema available at https://staging.api.openaip.net/api/v2/schema/hotspot/featureCollection.json.
             parameters:
                 # apiKey param
                 -   $ref: '#/components/parameters/apiKey'
@@ -463,7 +463,7 @@ paths:
                     content:
                         application/vnd.geo+json:
                             schema:
-                                $ref: 'https://staging.api.openaip.net.net/api/v2/schema/hotspot/featureCollection.json'
+                                $ref: 'https://staging.api.openaip.net/api/v2/schema/hotspot/featureCollection.json'
                 400:
                     $ref: '#/components/responses/400'
                 401:
@@ -478,7 +478,7 @@ paths:
             tags:
                 - Navaids
             summary: Search navaids
-            description: Search database for navaids based on filter criteria. Complete schema available at https://staging.api.openaip.net.net/api/v2/schema/navaid/featureCollection.json.
+            description: Search database for navaids based on filter criteria. Complete schema available at https://staging.api.openaip.net/api/v2/schema/navaid/featureCollection.json.
             parameters:
                 # apiKey param
                 -   $ref: '#/components/parameters/apiKey'
@@ -517,7 +517,7 @@ paths:
                     content:
                         application/vnd.geo+json:
                             schema:
-                                $ref: 'https://staging.api.openaip.net.net/api/v2/schema/navaid/featureCollection.json'
+                                $ref: 'https://staging.api.openaip.net/api/v2/schema/navaid/featureCollection.json'
                 400:
                     $ref: '#/components/responses/400'
                 401:
