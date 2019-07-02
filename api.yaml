@@ -281,6 +281,29 @@ paths:
                     $ref: '#/components/responses/404'
                 503:
                     $ref: '#/components/responses/503'
+    /airports/countries:
+        get:
+            tags:
+                - Navaids
+            summary: A list of used countries in this dataset.
+            description: A list of used countries in this dataset. Complete schema available at https://api.openaip.net/api/v2/schema/availableCountries.json.
+            parameters:
+                # apiKey param
+                -   $ref: '#/components/parameters/apiKey'
+            responses:
+                200:
+                    content:
+                        application/vnd.geo+json:
+                            schema:
+                                $ref: 'https://api.openaip.net/api/v2/schema/availableCountries.json'
+                400:
+                    $ref: '#/components/responses/400'
+                401:
+                    $ref: '#/components/responses/401'
+                404:
+                    $ref: '#/components/responses/404'
+                503:
+                    $ref: '#/components/responses/503'                       
     # airspaces
     /airspaces:
         get:
@@ -405,6 +428,29 @@ paths:
                     $ref: '#/components/responses/404'
                 503:
                     $ref: '#/components/responses/503'
+    /airspaces/countries:
+        get:
+            tags:
+                - Navaids
+            summary: A list of used countries in this dataset.
+            description: A list of used countries in this dataset. Complete schema available at https://api.openaip.net/api/v2/schema/availableCountries.json.
+            parameters:
+                # apiKey param
+                -   $ref: '#/components/parameters/apiKey'
+            responses:
+                200:
+                    content:
+                        application/vnd.geo+json:
+                            schema:
+                                $ref: 'https://api.openaip.net/api/v2/schema/availableCountries.json'
+                400:
+                    $ref: '#/components/responses/400'
+                401:
+                    $ref: '#/components/responses/401'
+                404:
+                    $ref: '#/components/responses/404'
+                503:
+                    $ref: '#/components/responses/503'                       
     # hotspots
     /hotspots:
         get:
@@ -472,6 +518,29 @@ paths:
                     $ref: '#/components/responses/404'
                 503:
                     $ref: '#/components/responses/503'
+    /hotspots/countries:
+        get:
+            tags:
+                - Navaids
+            summary: A list of used countries in this dataset.
+            description: A list of used countries in this dataset. Complete schema available at https://api.openaip.net/api/v2/schema/availableCountries.json.
+            parameters:
+                # apiKey param
+                -   $ref: '#/components/parameters/apiKey'
+            responses:
+                200:
+                    content:
+                        application/vnd.geo+json:
+                            schema:
+                                $ref: 'https://api.openaip.net/api/v2/schema/availableCountries.json'
+                400:
+                    $ref: '#/components/responses/400'
+                401:
+                    $ref: '#/components/responses/401'
+                404:
+                    $ref: '#/components/responses/404'
+                503:
+                    $ref: '#/components/responses/503'    
     # navaids
     /navaids:
         get:
@@ -526,3 +595,26 @@ paths:
                     $ref: '#/components/responses/404'
                 503:
                     $ref: '#/components/responses/503'
+    /navaids/countries:
+        get:
+            tags:
+                - Navaids
+            summary: A list of used countries in this dataset.
+            description: A list of used countries in this dataset. Complete schema available at https://api.openaip.net/api/v2/schema/availableCountries.json.
+            parameters:
+                # apiKey param
+                -   $ref: '#/components/parameters/apiKey'
+            responses:
+                200:
+                    content:
+                        application/vnd.geo+json:
+                            schema:
+                                $ref: 'https://api.openaip.net/api/v2/schema/availableCountries.json'
+                400:
+                    $ref: '#/components/responses/400'
+                401:
+                    $ref: '#/components/responses/401'
+                404:
+                    $ref: '#/components/responses/404'
+                503:
+                    $ref: '#/components/responses/503'                    
