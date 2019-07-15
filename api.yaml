@@ -284,7 +284,7 @@ paths:
     /airports/countries:
         get:
             tags:
-                - Navaids
+                - Airports
             summary: A list of used countries in this dataset.
             description: A list of used countries in this dataset. Complete schema available at https://api.openaip.net/api/v2/schema/availableCountries.json.
             parameters:
@@ -431,7 +431,7 @@ paths:
     /airspaces/countries:
         get:
             tags:
-                - Navaids
+                - Airspaces
             summary: A list of used countries in this dataset.
             description: A list of used countries in this dataset. Complete schema available at https://api.openaip.net/api/v2/schema/availableCountries.json.
             parameters:
@@ -521,7 +521,7 @@ paths:
     /hotspots/countries:
         get:
             tags:
-                - Navaids
+                - Hotspots
             summary: A list of used countries in this dataset.
             description: A list of used countries in this dataset. Complete schema available at https://api.openaip.net/api/v2/schema/availableCountries.json.
             parameters:
