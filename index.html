@@ -36,7 +36,10 @@
     window.onload = function () {
         // Begin Swagger UI call region
         const ui = SwaggerUIBundle({
-            url: 'https://api.core.openaip.net/api/system/specs/v1/schema.json',
+            urls: [
+                { url: 'https://api.core.openaip.net/api/system/specs/v1/schema.json', name: 'Core API'},
+                { url: 'https://api.iam.openaip.net/api/system/specs/v1/schema.json', name: 'IAM API'},
+            ],
             dom_id: '#swagger-ui',
             deepLinking: true,
             presets: [
