@@ -49,10 +49,13 @@
             plugins: [
                 SwaggerUIBundle.plugins.DownloadUrl
             ],
-            layout: 'StandaloneLayout'
+            layout: 'StandaloneLayout',
+            syntaxHighlight: {
+                activate: true,
+                theme: 'monokai',
+            },
         });
         // End Swagger UI call region
-
         window.ui = ui;
     };
 </script>
