@@ -36,12 +36,10 @@
         // Begin Swagger UI call region
         const ui = SwaggerUIBundle({
             urls: [
-                { url: 'http://localhost:3000/api/system/specs/v1/schema.json', name: 'Core API'},
-                { url: 'http://localhost:3001/api/system/specs/v1/schema.json', name: 'IAM API'},
-                { url: 'http://localhost:3002/api/system/specs/v1/schema.json', name: 'Tiles API'},
-                // { url: 'https://api.core.openaip.net/api/system/specs/v1/schema.json', name: 'Core API'},
-                // { url: 'https://api.iam.openaip.net/api/system/specs/v1/schema.json', name: 'IAM API'},
-                // { url: 'https://api.tiles.openaip.net/api/system/specs/v1/schema.json', name: 'Tiles API'},
+                { url: 'https://api.core.openaip.net/api/system/specs/v1/schema.json', name: 'Core API'},
+                { url: 'https://api.iam.openaip.net/api/system/specs/v1/schema.json', name: 'IAM API'},
+                { url: 'https://api.tiles.openaip.net/api/system/specs/v1/schema.json', name: 'Tiles API'},
+                { url: 'https://api.data-export.openaip.net/api/system/specs/v1/schema.json', name: 'Data Export API'},
             ],
             dom_id: '#swagger-ui',
             deepLinking: true,
